@@ -23,7 +23,7 @@ public class GeneratorService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GeneratorService.class);
 
-    private static final String htmlFileName = "publish/ffutop.opml.html";
+    private static final String htmlFileName = "publish/index.html";
 
     public void generateHtml(Opml opml, List<Rss.Item> rssItemList) {
         Configuration configuration = new Configuration(Configuration.VERSION_2_3_32);
