@@ -27,7 +27,7 @@ public class GeneratorService {
     public void generateHtml(Opml opml, List<Rss.Item> rssItemList) {
         Configuration configuration = new Configuration(Configuration.VERSION_2_3_32);
         configuration.setDefaultEncoding("UTF-8");
-        configuration.setTimeZone(TimeZone.getDefault());
+        configuration.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"));
         configuration.setClassForTemplateLoading(GeneratorService.class, "/templates");
         Template template = null;
         try {
