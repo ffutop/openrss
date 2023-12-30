@@ -86,7 +86,7 @@ HTML {
 <main>
 
 <h1>${BLOGS_COUNT} 技术博客 <sup style="font-size: 14px"><a href="/ffutop.opml">OPML</a></sup></h1>
-<p><em>最后更新时间：${.now?string("yyyy-MM-dd HH:mm")}</em></p>
+<p><em>最后更新时间：${.now?string("yyyy-MM-dd HH:mm +08:00")}</em></p>
 
 <div class="items">
 <#assign DATE>"9999-99-99"</#assign>
