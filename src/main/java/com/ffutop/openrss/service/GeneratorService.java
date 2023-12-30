@@ -9,7 +9,6 @@ import freemarker.template.TemplateException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
@@ -29,13 +28,7 @@ public class GeneratorService {
         Configuration configuration = new Configuration(Configuration.VERSION_2_3_32);
         configuration.setDefaultEncoding("UTF-8");
         configuration.setTimeZone(TimeZone.getDefault());
-        try {
-            configuration.setDirectoryForTemplateLoading(new File(Objects.requireNonNull(GeneratorService.class.getClassLoader().getResource("templates")).getFile()));
-        } catch (IOException iox) {
-            LOGGER.error("setDirectoryForTemplateLoading failed, abort generate html", iox);
-            return;
-        }
-
+        configuration.setClassForTemplateLoading(GeneratorService.class, "/templates");
         Template template = null;
         try {
             template = configuration.getTemplate("template.html.ftl");
