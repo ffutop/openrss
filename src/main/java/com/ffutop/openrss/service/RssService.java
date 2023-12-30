@@ -6,8 +6,12 @@ import com.ffutop.openrss.model.Opml;
 import com.ffutop.openrss.model.Rss;
 import com.ffutop.openrss.util.DateUtil;
 import org.apache.hc.client5.http.classic.HttpClient;
+import org.apache.hc.client5.http.config.ConnectionConfig;
+import org.apache.hc.client5.http.config.RequestConfig;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
+import org.apache.hc.client5.http.impl.io.BasicHttpClientConnectionManager;
 import org.apache.hc.core5.http.ClassicHttpRequest;
+import org.apache.hc.core5.http.io.SocketConfig;
 import org.apache.hc.core5.http.io.support.ClassicRequestBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +20,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -26,9 +31,19 @@ public class RssService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RssService.class);
 
-    private HttpClient client = HttpClients.createDefault();
+    private HttpClient client;
 
     private XmlMapper xmlMapper = XmlMapper.xmlBuilder().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false).build();
+
+    public RssService() {
+        BasicHttpClientConnectionManager connectionManager = new BasicHttpClientConnectionManager();
+        connectionManager.setConnectionConfig(ConnectionConfig.custom().setConnectTimeout(10, TimeUnit.SECONDS).build());
+        connectionManager.setSocketConfig(SocketConfig.custom().setSoTimeout(10, TimeUnit.SECONDS).build());
+        client = HttpClients.custom()
+                .setDefaultRequestConfig(RequestConfig.custom().setConnectionRequestTimeout(10, TimeUnit.SECONDS).build())
+                .setConnectionManager(connectionManager)
+                .build();
+    }
 
     /**
      * Crawls the specified RSS feed URI and returns the RSS object.
