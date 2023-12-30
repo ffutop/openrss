@@ -4,12 +4,23 @@
         <title>技术博客 - OpenRSS</title>
     </head>
     <body>
-        <outline type="rss" text="ArthurChiao's Blog" title="ArthurChiao's Blog" xmlUrl="https://arthurchiao.github.io/feed.xml" htmlUrl="https://arthurchiao.github.io/"/>
-        <outline type="rss" text="Timescale" title="Timescale" xmlUrl="https://blog.timescale.com/feed" htmlUrl="https://blog.timescale.com/"/>
-        <outline type="rss" text="PingCAP" title="PingCAP" xmlUrl="https://cn.pingcap.com/feed/" htmlUrl="https://cn.pingcap.com/blog/"/>
         <outline type="rss" text="All Things Distributed" title="All Things Distributed" xmlUrl="https://www.allthingsdistributed.com/atom.xml" htmlUrl="https://www.allthingsdistributed.com/"/>
-        <outline type="rss" text="Netflix" title="Netflix" xmlUrl="https://medium.com/feed/netflix-techblog" htmlUrl="https://netflixtechblog.com?source=rss----2615bd06b42e---4"/>
+        <outline type="rss" text="ArthurChiao's Blog" title="ArthurChiao's Blog" xmlUrl="https://arthurchiao.github.io/feed.xml" htmlUrl="https://arthurchiao.github.io/"/>
+        <outline type="rss" text="Auth0" title="Auth0" xmlUrl="https://auth0.com/blog/rss.xml" htmlUrl="https://auth0.com/blog/"/>
+        <outline type="rss" text="AWS" title="AWS" xmlUrl="https://aws.amazon.com/blogs/aws/feed/" htmlUrl="https://aws.amazon.com/blogs/aws/"/>
+        <outline type="rss" text="Docker" title="Docker" xmlUrl="https://blog.docker.com/feed/" htmlUrl="https://blog.docker.com/"/>
+        <outline type="rss" text="Facebook" title="Facebook" xmlUrl="https://code.fb.com/feed/" htmlUrl="https://code.facebook.com/posts/"/>
+        <outline type="rss" text="GitHub" title="GitHub" xmlUrl="https://githubengineering.com/atom.xml" htmlUrl="https://githubengineering.com/"/>
+        <outline type="rss" text="Go" title="Go" xmlUrl="https://blog.golang.org/feed.atom" htmlUrl="https://blog.golang.org/"/>
+        <outline type="rss" text="HTTP Toolkit" title="HTTP Toolkit" xmlUrl="https://httptoolkit.tech/rss.xml" htmlUrl="https://httptoolkit.tech/blog" />
         <outline type="rss" text="Kubernetes" title="Kubernetes" xmlUrl="https://kubernetes.io/feed.xml" htmlUrl="https://kubernetes.io/"/>
+        <outline type="rss" text="Netflix" title="Netflix" xmlUrl="https://medium.com/feed/netflix-techblog" htmlUrl="https://netflixtechblog.com?source=rss----2615bd06b42e---4"/>
+        <outline type="rss" text="PingCAP" title="PingCAP" xmlUrl="https://cn.pingcap.com/feed/" htmlUrl="https://cn.pingcap.com/blog/"/>
+        <outline type="rss" text="ThoughtWorks" title="ThoughtWorks" xmlUrl="https://www.thoughtworks.com/rss/insights.xml" htmlUrl="https://www.thoughtworks.com/insights"/>
+        <outline type="rss" text="Timescale" title="Timescale" xmlUrl="https://blog.timescale.com/feed" htmlUrl="https://blog.timescale.com/"/>
+        <outline type="rss" text="0xADADA" title="0xADADA" xmlUrl="https://0xadada.pub/feed.xml" htmlUrl="https://0xadada.pub/"/>
         <outline type="rss" text="美团技术团队" title="美团技术团队" xmlUrl="https://tech.meituan.com/feed/" htmlUrl="https://tech.meituan.com/" />
+        <outline type="rss" text="淘系技术团队" title="淘系技术团队" xmlUrl="https://blog.csdn.net/Taobaojishu/rss/list" htmlUrl="https://tech.taobao.org/" />
+        <outline type="rss" text="阿里巴巴中间件" title="阿里巴巴中间件" xmlUrl="https://blog.csdn.net/weixin_39860915/rss/list" htmlUrl="https://blog.csdn.net/weixin_39860915" />
     </body>
 </opml>
