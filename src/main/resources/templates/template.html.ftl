@@ -100,6 +100,7 @@ HTML {
     <div class="source"><span>${ITEM.author}</span></div>
   </div>
 </#list>
+</div>
   <footer>
     <p><a href="https://github.com/ffutop/openrss">GitHub repo.</a></p>
   </footer>
