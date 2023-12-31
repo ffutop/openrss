@@ -33,8 +33,9 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Force Hosts
-      run: echo '117.149.203.69 blog.csdn.net' >> /etc/hosts
-      
+      run: |
+        sudo echo "117.149.203.69 blog.csdn.net" | sudo tee -a /etc/hosts
+
     - name: Run Java
       run: java -jar target/openrss-jar-with-dependencies.jar
 
