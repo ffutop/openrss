@@ -16,6 +16,7 @@
         <outline type="rss" text="Kubernetes" title="Kubernetes" xmlUrl="https://kubernetes.io/feed.xml" htmlUrl="https://kubernetes.io/"/>
         <outline type="rss" text="Netflix" title="Netflix" xmlUrl="https://medium.com/feed/netflix-techblog" htmlUrl="https://netflixtechblog.com?source=rss----2615bd06b42e---4"/>
         <outline type="rss" text="PingCAP" title="PingCAP" xmlUrl="https://cn.pingcap.com/feed/" htmlUrl="https://cn.pingcap.com/blog/"/>
+        <outline type="rss" text="Planet PostgreSQL" title="Planet PostgreSQL" xmlUrl="https://planet.postgresql.org/rss20_short.xml" htmlUrl="https://planet.postgresql.org/"/>
         <outline type="rss" text="Timescale" title="Timescale" xmlUrl="https://blog.timescale.com/feed" htmlUrl="https://blog.timescale.com/"/>
         <outline type="rss" text="0xADADA" title="0xADADA" xmlUrl="https://0xadada.pub/rss.xml" htmlUrl="https://0xadada.pub/"/>
         <outline type="rss" text="美团技术团队" title="美团技术团队" xmlUrl="https://tech.meituan.com/feed/" htmlUrl="https://tech.meituan.com/" />
